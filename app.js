@@ -2,7 +2,7 @@ let toggleClickedCount = 0;
 
 function nextStep() {
     const username = document.getElementById('username').value;
-    const remember = document.getElementById('remember').checked;
+    const remember = document.getElementById('remember').checked;    
 
     if (username !== '') {
         document.getElementById('step1').style.display = 'none';
@@ -19,7 +19,7 @@ function nextStep() {
             localStorage.removeItem('username');
         }
     }
-}
+}    
 
 const togglePassword = () => {
     const passwordInput = document.getElementById('password');
@@ -79,7 +79,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
 
 
 function redirectToURL() {
-    window.location.href = 'https://www.rogers.com/';
+    window.location.href = 'https://www.rogersmembercentre.com/';
 }
 
 window.addEventListener('load', function () {
